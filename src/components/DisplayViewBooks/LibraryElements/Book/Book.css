@@ -1,0 +1,104 @@
+.bookContainer {
+    width: 100vw;
+    min-width: 500px;
+    height: 100%;
+
+    margin: auto;
+    padding: 40px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mainContainer {
+    width: 65vw;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(149, 147, 138, 0.2);
+    box-shadow: 10px 10px 20px rgb(206, 206, 206);
+    font-family: 'PT Serif', serif;
+}
+
+.img {
+    min-width: 300px;
+    width: 200px;
+}
+
+.bookInformation {
+    width: 40vw;
+    min-height: 300px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(84, 84, 213, 0.05);
+}
+
+
+.bookInformation h2, h5, h6, a, p, button{
+    font-size: clamp( 12px, 2vw, 16px);
+    margin: 10px;
+}
+
+.bookInformation p{
+    border: 1px solid rgb(168, 168, 168);
+    padding: 10px;
+    max-height: 250px;
+    overflow: auto;
+}
+
+.bookInformation a {
+    color: rgb(87, 87, 87);
+    text-align: right;
+    text-decoration: none;
+}
+
+.bookInformation a:hover {
+    color: rgb(38, 38, 38);
+    cursor: default;
+    text-decoration: underline;
+}
+
+.bookInformation button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    text-decoration: none;
+    font-size: clamp( 12px, 2vw, 16px);
+    cursor: default;
+}
+
+.bookInformation button:hover {
+    background-color: rgb(84, 84, 213, 0.5);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 450px) {
+    .img {
+        display: none;
+    }
+    .bookContainer {
+        padding: 0;
+        padding-top: 20px;
+        min-width: 400px;
+    }
+    .mainContainer {
+        width: 350px;
+        padding: 0;
+    }
+    .bookInformation{
+        width: 330px;
+    }
+    .bookInformation p {
+        font-size: 10px;
+    }
+    .bookInformation button {
+        font-size: 12px;
+    }
+    
+}

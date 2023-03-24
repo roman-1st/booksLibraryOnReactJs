@@ -1,0 +1,40 @@
+.selectionBlock {
+    display: flex; 
+    justify-content: space-around;
+    flex-direction: row;
+
+    width: 40vw;
+    min-width: 400px;
+}
+
+.selectionBlock div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 12vw;
+    min-width: 150px;
+    height: 35px;
+
+    margin-top: 20px;
+
+    font-size: clamp(12px, 2vw, 18px);
+    font-variant: bolder;
+
+    /* background-color: rgb(146, 190, 255, 0.9); */
+    background-color: rgb(146, 190, 255, 0.1);
+    border: 1px solid whitesmoke;
+}
+
+.selectionBlock div select {
+    height: 30px;
+    background-color: rgb(146, 190, 255, 0.1);
+
+    /* background-color: rgba(225, 130, 246, 0.5); */
+    /* background-color: rgba(206, 210, 194, 0.5); */
+    outline: none;
+    border: 1px solid rgb(149, 149, 149);
+
+    font-size: clamp(12px, 2vw, 18px);
+    color: rgb(31, 31, 31);
+}

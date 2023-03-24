@@ -1,0 +1,39 @@
+.SearchBlock {
+    width: 100vw;
+    height: 20vh;
+    min-height: 200px;
+    max-height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'PT Serif', serif;
+
+    background: 
+    /* linear-gradient(rgba(255, 255, 255), rgba(0, 0, 0, 0.8)),  */
+    url(https://kartinkin.net/uploads/posts/2022-07/1657677678_4-kartinkin-net-p-knizhnaya-polka-kartinki-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    padding-top: -5px;    
+}
+
+.SearchBlock h3 {
+    font-size: clamp(18px, 2vw, 28px);
+    color: black;
+    margin: 0;
+}
+
+@media screen and (max-width: 450px) {
+    .booksBlock {
+        display: grid;
+        grid-template-columns: repeat(2, 30vw);
+        justify-content: center;
+        gap: 3em;
+        flex-wrap: wrap;
+    }
+}
+

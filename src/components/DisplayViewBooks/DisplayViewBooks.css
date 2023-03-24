@@ -1,0 +1,68 @@
+.DisplayViewBooks{
+    text-align: center;
+}
+
+.foundResult {
+    text-decoration: underline;
+    font-family: 'PT Serif', serif;
+    font-size: clamp(14px, 2vw, 18px);
+    color: rgb(160, 160, 160);
+    cursor: default;
+}
+
+.booksBlock {
+    width: 100vw;
+
+    display: grid;
+    grid-template-columns: repeat(4, 15vw);
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.loadMore {
+    width: 100vw;
+    height: 15vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadMore button {
+    background-color: rgb(146, 190, 255, 0.1);
+    width: 15vw;
+    min-width: 100px;
+    height: 5vh;
+    min-height: 40px;
+
+    border: 0;
+}
+
+.loadMore button:hover {
+    background-color: rgba(6, 13, 144, 0.3);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    .booksBlock {
+        display: grid;
+        grid-template-columns: repeat(3, 20vw);
+        justify-content: center;
+        gap: 3em;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .booksBlock {
+        display: grid;
+        grid-template-columns: repeat(2, 30vw);
+        justify-content: center;
+        gap: 3em;
+        flex-wrap: wrap;
+    }
+}
+

@@ -1,0 +1,80 @@
+.ViewElement {
+    /* background-color: rgb(243, 243, 243);
+    background-color: rgb(185, 74, 210, 0.1); */
+    background-color: rgba(149, 147, 138, 0.2);
+    box-shadow: 10px 10px 20px rgb(206, 206, 206);
+    font-family: 'PT Serif', serif;
+    /* box-shadow: inset; */
+}
+
+.ViewElement img {
+    width: 10vw;
+    min-width: 55px;
+    max-width: 200px;
+    height: 15vw;
+    min-height: 100px;
+    max-height: 300px;
+
+    margin-top: 20px;
+}
+
+.categories {
+    color: rgb(100, 100, 100);
+    text-decoration: underline;
+}
+
+.ViewElement h2 {
+    font-size: clamp( 10px, 1vw, 20px );
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    line-clamp: 1;
+    box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    margin: 0 10px;
+}
+
+.authors {
+    font-size: clamp( 10px, 1vw, 20px );
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    display: -webkit-box;
+    line-clamp: 1;
+    box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    color: rgb(73, 73, 73);
+    margin: 10px;
+    text-decoration: none;
+}
+
+.goToBook {
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+
+.goToBook:hover {
+    text-decoration: underline;
+    cursor: default;
+
+}
+
+.goToBook:active {
+    text-decoration: none;
+}
+
+
+
+.categories {
+    font-size: clamp( 10px, 1vw, 20px );
+}
+
+
